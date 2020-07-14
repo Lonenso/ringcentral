@@ -1,0 +1,7 @@
+.idea
+data/
+vendor
+
+go.sum
+*.exe
+*.db
