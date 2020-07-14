@@ -88,7 +88,7 @@ func editFile(c *gin.Context) {
 
 	id := c.Param("id")
 	var file File
-	err := db.Debug().First(&file, id).Error
+	err := db.First(&file, id).Error
 	if err != nil {
 		c.String(http.StatusNotFound, fmt.Sprintf("Sorry, File id: %v not found", id))
 		return
