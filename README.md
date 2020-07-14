@@ -2,14 +2,15 @@
 
 ## How to run it?
 ### Release
-- [linux/amd64]()
-- [win/am64]()
+- [linux/amd64](https://github.com/Lonenso/ringcentral/releases/download/0.1/main)
+- [win/am64](https://github.com/Lonenso/ringcentral/releases/download/0.1/main.exe)
 ### Build from source
 ```
 git clone https://github.com/Lonenso/ringcentral.git
 go mod tidy && go mod vendor 
 go build main.go 
 ```
+Building should fail if CGO_ENABLED=0, make sure you have gcc installed.
 windows
 ```
 ./main.exe 
@@ -18,7 +19,6 @@ linux
 ```
 ./main
 ```
-it should fail if CGO_ENABLED=0, make sure you have gcc installed.
 
 ### Run
 ```
